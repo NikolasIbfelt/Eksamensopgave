@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h2:nth-child(odd) {
+    color: #b1e493;
+}
+h2:nth-child(even) {
+    color: #93b8d9;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+footer {
+    background-color: #b3b3b3;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+#pagegrid {
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    grid-row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "komogmodelproduktion"
+        "citat1"
+        "tekst2"
+        "tekst3"
+        "citat2"
+        "tekst4"
+        "perception"
+        "citat4"
+        "tekst5"
+        "tekst6"
+        "symmetrisk"
+        "tekst7"
+        "sproget"
+        "tekst8"
+        "paradigmer"
+        "citat3"
+        "tekst13"
+        "samfparadigme"
+        "liste1"
+        "humaparadigme"
+        "liste2"
+        "synkron"
+        "tekst11"
+        "tekst12"
+        "kongruent"
+        "tekst9"
+        "tekst10"
+        "tekst14";
+}
+
+/*--- OVERSKRIFTER ---*/
+
+#komogmodelproduktion {
+    grid-area: komogmodelproduktion;
+    max-width: 80%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#perception {
+    grid-area: perception;
+}
+#symmetrisk {
+    grid-area: symmetrisk;
+}
+#sproget {
+    grid-area: sproget;
+}
+#paradigmer {
+    grid-area: paradigmer;
+}
+
+#kongruent {
+    grid-area: kongruent;
+}
+#synkron {
+    grid-area: synkron;
+}
+#samfparadigme {
+    grid-area: samfparadigme;
+    text-align: center;
+}
+#humaparadigme {
+    grid-area: humaparadigme;
+    text-align: center;
+}
+
+/*--- TEKSTER ---*/
+
+.tekster {
+    
+}
+
+#tekst2 {
+    grid-area: tekst2;
+}
+
+#tekst3 {
+    grid-area: tekst3;
+}
+
+#tekst4 {
+    grid-area: tekst4;
+}
+
+#tekst5 {
+    grid-area: tekst5;
+}
+
+#tekst6 {
+    grid-area: tekst6;
+}
+
+#tekst7 {
+    grid-area: tekst7;
+}
+
+#tekst8 {
+    grid-area: tekst8;
+}
+
+#tekst9 {
+    grid-area: tekst9;
+}
+
+#tekst10 {
+    grid-area: tekst10;
+}
+
+#tekst11 {
+    grid-area: tekst11;
+}
+
+#tekst12 {
+    grid-area: tekst12;
+}
+
+#tekst13 {
+    grid-area: tekst13;
+    text-align: center;
+}
+
+#tekst14 {
+    grid-area: tekst14;
+}
+
+/*--- CITATER ---*/
+
+
+
+#citat1 {
+    grid-area: citat1;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#citat2 {
+    grid-area: citat2;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#citat3 {
+    grid-area: citat3;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+
+#citat4 {
+    grid-area: citat4;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*--- LISTER ---*/
+
+
+#liste1 {
+    grid-area: liste1;
+    margin-left: 20px;
+}
+
+#liste2 {
+    grid-area: liste2;
+    margin-left: 20px;
+}
+
+.forside {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-right: 70px;
+    text-align: center;
+
+}
+@media screen and (min-width: 500px) {
+    #pagegrid {
+    background-color: #fafafa;
+    font-size: 15px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "komogmodelproduktion komogmodelproduktion komogmodelproduktion komogmodelproduktion"
+        ". citat1 citat1 ."
+        ". tekst2 tekst2 ."
+        ". tekst3 tekst3 ."
+        "citat2 citat2 citat2 citat2"
+        ". tekst4 tekst4 ."
+        "perception perception . ."
+        ". citat4 citat4 ."
+        "tekst5 tekst5 tekst6 tekst6"
+        "symmetrisk symmetrisk symmetrisk symmetrisk"
+        "tekst7 tekst7 tekst7 tekst7"
+        "sproget sproget sproget sproget"
+        "tekst8 tekst8 tekst8 tekst8"
+        "paradigmer paradigmer paradigmer paradigmer"
+        ". citat3 citat3 ."
+        ". tekst13 tekst13 ."
+        "samfparadigme samfparadigme humaparadigme humaparadigme"
+        "liste1 liste1 liste2 liste2"
+        "synkron synkron synkron synkron"
+        "tekst11 tekst11 tekst11 tekst11"
+        "tekst12 tekst12 tekst12 tekst12"
+        "kongruent kongruent kongruent kongruent"
+        "tekst9 tekst9 tekst9 tekst9"
+        "tekst10 tekst10 tekst10 tekst10"
+        "tekst14 tekst14 tekst14 tekst14"
+    }
+    
+.forside {
+    margin-top: 50px;
+    margin-left: 360px;    
+    }
+    
+#tekst2 {
+    border-left: solid black 2px;
+    padding-left: 15px;
+    border-right: solid black 2px;
+    padding-right: 5px;
+}
+#tekst3 {
+    border-left: solid black 2px;
+    padding-left: 15px;
+    border-right: solid black 2px;
+    padding-right: 5px;
+}
+}
+
+@media screen and (min-width: 500px) {
+    #pagegrid {
+    background-color: #fafafa;
+    font-size: 15px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". komogmodelproduktion komogmodelproduktion ."
+        ". citat1 citat1 ."
+        ". tekst2 tekst2 ."
+        ". tekst3 tekst3 ."
+        " . citat2 citat2 ."
+        " . tekst4 tekst4 ."
+        ". perception perception ."
+        ". citat4 citat4 ."
+        "tekst5 tekst5 tekst5 tekst5"
+        "tekst6 tekst6 tekst6 tekst6"
+        ". symmetrisk symmetrisk ."
+        "tekst7 tekst7 tekst7 tekst7"
+        ". sproget sproget ."
+        "tekst8 tekst8 tekst8 tekst8"
+        ". paradigmer paradigmer ."
+        ". citat3 citat3 ."
+        "tekst13 tekst13 tekst13 tekst13"
+        ". samfparadigme humaparadigme ."
+        ". liste1 liste2 ."
+        ". synkron synkron ."
+        "tekst11 tekst11 tekst11 tekst11"
+        "tekst12 tekst12 tekst12 tekst12"
+        ". kongruent kongruent ."
+        "tekst9 tekst9 tekst9 tekst9"
+        "tekst10 tekst10 tekst10 tekst10"
+        "tekst14 tekst14 tekst14 tekst14"
+        
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,312 @@
+h2:nth-child(odd) {
+    color: #b1e493;
+}
+h2:nth-child(even) {
+    color: #93b8d9;
+}
+
+h3 {
+    text-align: center;
+}
+
+footer {
+    background-color: #b3b3b3;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+#pagegrid{
+    display: grid;
+    font-size: 15px;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "overskrift1"
+        "citat1"
+        "tekst1"
+        "liste1"
+        "model1"
+        "tekst2"
+        "liste2"
+        "tekst3"
+        "overskrift2"
+        "citat2"
+        "tekst4"
+        "tekst5"
+        "model2"
+        "liste3"
+        "tekst6"
+        "model3"
+        "tekst7"
+        "tekst8"
+        "overskrift3"
+        "liste4"
+        "overskrift4"
+        "tekst9"
+        "overskrift5"
+        "tekst10"
+        "tekst11"
+        "tekst12"
+        "overskrift6"
+        "tekst13"
+        "nyhedstrekant2"
+        "overskrift7"
+        "tekst14"
+        "liste5"
+        "overskrift8"
+        "tekst15"
+        "tekst16"
+        "overskrift9"
+        "tekst17"
+        "tekst18"
+        ;
+}
+/*--- OVERSKRIFTER ---*/
+
+#praesentation {
+    grid-area: overskrift1;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#talensproces {
+    grid-area: overskrift2;
+}
+
+#the9cs {
+    grid-area: overskrift3;
+}
+
+#goderaad {
+    grid-area: overskrift4;
+}
+
+#oevdig {
+    grid-area: overskrift5;
+}
+
+#fysiske {
+    grid-area: overskrift6;
+}
+
+#smil {
+    grid-area: overskrift7;
+}
+
+#bevaegelse {
+    grid-area: overskrift8;
+}
+
+#humor {
+    grid-area: overskrift9;
+}
+
+/*--- BILLEDER ---*/
+
+#aptummodel {
+    grid-area: model1;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#model2 {
+    grid-area: model2;
+    max-width: 100%;
+    text-align: center;
+}
+
+#fisken {
+    grid-area: model3;
+    max-width: 100%;
+    align-content: center;
+}
+
+/*--- TEKSTER ---*/
+
+#tekst1 {
+    grid-area: tekst1;
+}
+#tekst2 {
+    grid-area: tekst2;
+    text-align: center;
+}
+#tekst3 {
+    grid-area: tekst3;
+    text-align: center;
+}
+#tekst4 {
+    grid-area: tekst4;
+}
+#tekst5 {
+    grid-area: tekst5;
+    text-align: center;
+}
+#tekst6 {
+    grid-area: tekst6;
+    text-align: center;
+}
+#tekst7 {
+    grid-area: tekst7;
+}
+#tekst8 {
+    grid-area: tekst8;
+}
+#tekst9 {
+    grid-area: tekst9;
+}
+#tekst10 {
+    grid-area: tekst10;
+}
+#tekst11 {
+    grid-area: tekst11;
+}
+#tekst12 {
+    grid-area: tekst12;
+}
+#tekst13 {
+    grid-area: tekst13;
+}
+#tekst14 {
+    grid-area: tekst14;
+}
+
+#tekst15 {
+    grid-area: tekst15;
+}
+
+#tekst16 {
+    grid-area: tekst16;
+}
+
+#tekst17 {
+    grid-area: tekst17;
+}
+
+#tekst18 {
+    grid-area: tekst18;
+}
+
+/*--- CITATER ---*/
+
+#citat1 {
+    grid-area: citat1;
+    text-align: center;
+}
+
+#citat2 {
+    grid-area: citat2;
+    text-align: center;
+}
+
+
+/*--- LISTER ---*/
+
+#liste1 {
+    grid-area: liste1;
+}
+
+#liste2 {
+    grid-area: liste2;
+}
+
+#liste3 {
+    grid-area: liste3;
+}
+
+#liste4 {
+    grid-area: liste4;
+}
+
+#liste5 {
+    grid-area: liste5;
+}
+
+/*--- CITATER ---*/
+
+#citat1 {
+    grid-area: citat1;
+}
+#citat2 {
+    grid-area: citat2;
+}
+#citat3 {
+    grid-area: citat3;
+}
+#citat4 {
+    grid-area: citat4;
+}
+.forside {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-right: 70px;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 500px) {
+    #pagegrid {
+    padding-left: 30px;
+    background-color: #fafafa;
+    font-size: 15px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "overskrift1 overskrift1 overskrift1 overskrift1"
+        ". citat1 citat1 ."
+        "tekst1 tekst1 tekst1 tekst1"
+        "liste1 . . ."
+        "tekst2 tekst2 . ."
+        "liste2 liste2 model1 model1"
+        ". . model1 model1"
+        "tekst3 tekst3 tekst3 tekst3"
+        "overskrift2 overskrift2 overskrift2 overskrift2"
+        ". citat2 citat2 ."
+        "tekst4 tekst4 tekst4 tekst4"
+        "tekst5 tekst5 tekst5 tekst5"
+        "liste3 liste3 model2 model2"
+        "liste3 liste3 model2 model2"
+        "liste3 liste3 model2 model2"
+        "tekst6 tekst6 tekst6 tekst6"
+        "model3 model3 model3 model3"
+        "tekst7 tekst7 tekst7 tekst7"
+        "overskrift3 overskrift3 overskrift3 overskrift3"
+        "tekst8 tekst8 liste4 liste4"
+        "tekst8 tekst8 liste4 liste4"
+        "overskrift4 overskrift4 overskrift4 overskrift4"
+        "tekst9 tekst9 tekst9 tekst9"
+        "overskrift5 . . ."
+        "tekst10 tekst10 tekst10 tekst10"
+        "tekst11 tekst11 tekst11 tekst11"
+        "tekst12 tekst12 tekst12 tekst12"
+        "overskrift6 . . ."
+        "tekst13 tekst13 tekst13 tekst13"
+        "overskrift7 . . ."
+        "tekst14 tekst14 liste5 liste5"
+        "tekst14 tekst14 liste5 liste5"
+        "overskrift8 . . ."
+        "tekst15 tekst15 tekst15 tekst15"
+        "tekst16 tekst16 tekst16 tekst16"
+        "overskrift9 . . ."
+        "tekst17 tekst17 tekst17 tekst17"
+        "tekst18 tekst18 tekst18 tekst18"
+    }
+.forside {
+    margin-top: 50px;
+    margin-left: 360px;    
+    }
+}

@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+.forside {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-right: 70px;
+    text-align: center;
+
+}
+footer {
+    background-color: #b3b3b3;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+#pagegrid {
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "overskrift1"
+        "tekst1"
+        "tekst2"
+        "tekst3"
+        "tekst4"
+        "billed1"
+        "tekst5"
+        "billed2"
+        "tekst6"
+        "tekst7"
+        "forside"
+        ;
+}
+
+#overskrift1 {
+    grid-area: overskrift1;
+}
+
+#tekst1 {
+    grid-area: tekst1;
+}
+#tekst2 {
+    grid-area: tekst2;
+}
+#tekst3 {
+    grid-area: tekst3;
+}
+#tekst4 {
+    grid-area: tekst4;
+}
+#tekst5 {
+    grid-area: tekst5;
+}
+#tekst6 {
+    grid-area: tekst6;
+}
+#tekst7 {
+    grid-area: tekst7;
+}
+#billed1div {
+    grid-area: billed1;
+}
+#billed1jpeg {
+    max-width: 100%;
+}
+
+#billed2div {
+    grid-area: billed2;
+}
+#billed2jpeg {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    #pagegrid {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "overskrift1 overskrift1 overskrift1"
+        "tekst1 tekst1 tekst1"
+        "tekst2 tekst2 tekst2"
+        "tekst3 tekst3 tekst3"
+        "tekst4 tekst4 tekst4"
+        "tekst5 tekst5 billed1"
+        "billed2 tekst6 ."
+        "tekst7 tekst7 tekst7"
+        
+    }
+    .forside {
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+}

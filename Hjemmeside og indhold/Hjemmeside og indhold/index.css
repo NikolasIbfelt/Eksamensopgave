@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#pagegrid {
+    background-color: #fafafa;
+    font-size: 15px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+        "sidenavn sidenavn"
+        "eksamensbeskrivelse eksamensbeskrivelse"
+        "niko niko"
+        "navn navn"
+        "nikobeskrivelse nikobeskrivelse"
+        "kommunikation kommunikationstekster"
+        "marketingstekster marketing"
+        "design designtekster"
+        "webdesignstekster webdesign"
+        "tvaer tvaer"
+        ;
+}
+/*--- GENERELT ---*/
+#eksamensopgave {
+    grid-area: sidenavn;
+    text-align: center;
+
+    
+}
+
+#nikolas {
+    grid-area: navn;
+    text-align: center;
+    border-bottom: solid black 1px;
+    margin-bottom: 20px;
+}
+
+#eksamensbeskrivelse {
+    grid-area: eksamensbeskrivelse;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#nikobeskrivelse {
+    grid-area: nikobeskrivelse;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#nikobilledediv {
+    grid-area: niko;
+}
+
+#nikobillede {
+    max-width: 100%;
+    border-right: none;
+    border-left: none;
+}
+
+/*--- KOMMUNIKATION ---*/
+#kommubilledediv {
+    grid-area: kommunikation;
+    padding-top: 25px
+    
+}
+
+#kommunikationbillede {
+    max-width: 100%;
+    
+}
+
+#kommunikationstekster {
+    grid-area: kommunikationstekster;
+    
+}
+#kommunikationsoverskrift {
+    border-bottom: solid black 1px;
+    font-size: 30px;
+}
+
+
+/*--- MARKETING ---*/
+#marketingbilledediv {
+    grid-area: marketing;
+    
+}
+
+#Marketingbillede {
+    max-width: 100%;
+}
+
+#marketingstekster {
+    grid-area: marketingstekster;
+    text-align: right;
+
+}
+#marketingsoverskrift {
+    border-bottom: solid black 1px;
+    text-align: right;
+    font-size: 30px;
+}
+
+/*--- DESIGN ---*/
+#designbilledediv {
+    grid-area: design;
+    padding-top: 25px;
+}
+
+#designbillede {
+    max-width: 100%;
+}
+
+#designtekster {
+    grid-area: designtekster;
+    
+}
+#designoverskrift {
+    border-bottom: solid black 1px;
+    font-size: 30px;
+}
+
+/*--- WEBDESIGN ---*/
+#webdesigndiv {
+    grid-area: webdesign;
+    padding-top: 25px;
+}
+
+#webdesignbillede {
+    max-width: 100%;
+}
+
+#webdesignstekster {
+    grid-area: webdesignstekster;
+    text-align: right;
+    
+}
+#webdesignoverskrift {
+    border-bottom: solid black 1px;
+    text-align: right;
+    font-size: 30px;
+}
+#tvaerbilledediv {
+    grid-area: tvaer
+}
+#tvaerbilled {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    #pagegrid {
+    background-color: #fafafa;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+        ". . sidenavn sidenavn . ."
+        ". eksamensbeskrivelse eksamensbeskrivelse eksamensbeskrivelse eksamensbeskrivelse ."
+        ". niko niko nikobeskrivelse nikobeskrivelse ."
+        ". niko niko nikobeskrivelse nikobeskrivelse ."
+        ". navn navn . . ."
+        ". kommunikation kommunikationstekster marketing marketingstekster ."
+        ". webdesign webdesignstekster design designtekster ."
+        ". tvaer tvaer tvaer tvaer ."
+        
+}
+    #webdesignoverskrift {
+        margin-right: 70px;
+    }
+    #webdesignstekster {
+        text-align: left;
+    }
+    #marketingbilledediv {
+        margin-top: 30px;
+    }
+    #marketingstekster {
+        text-align: left
+    }
+    
+    #nikobeskrivelse {
+        border: solid black 2px;
+        margin-bottom: 170px;
+        padding-top: 20px;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    #pagegrid {
+    background-color: #fafafa;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". sidenavn ."
+        ". eksamensbeskrivelse . "
+        "niko nikobeskrivelse ."
+        "navn . ."
+        "kommunikation . marketing marketingstekster"
+        "webdesign webdesignstekster ."
+        ". design designtekster"
+    }
+    #designbillede {
+    max-width: 70%;
+    }
+    #Marketingbillede {
+    max-width: 80%;
+}
+    #eksamensbeskrivelse {
+        margin-top: 50px;
+    }
+    #marketingsoverskrift {
+        text-align: left;
+    }
+    #marketingstekster{
+        margin-right: 550px;
+    }
+    #designtekster{
+        margin-right: 550px;
+    }
+    #webdesignoverskrift {
+        text-align: left;
+    }
+    #nikobeskrivelse {
+        margin-bottom: 530px;
+        margin-right: 800px;
+    }
+}
