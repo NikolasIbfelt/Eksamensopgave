@@ -1,0 +1,90 @@
+#pagegrid {
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    grid-row-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "tekst0"
+        "tekst1"
+        "tekst2"
+        "billed1"
+        "tekst3"
+        "tekst4"
+        "billed2";
+        
+}
+#tekst0 {
+    grid-area: tekst0;
+}
+
+#tekst1 {
+    grid-area: tekst1;
+}
+#tekst2 {
+    grid-area: tekst2;
+}
+#tekst3 {
+    grid-area: tekst3;
+}
+#tekst4 {
+    grid-area: tekst4;
+}
+
+#tidspunkterdiv {
+    grid-area: billed1;
+}
+#tidspunkterjpeg {
+    max-width: 100%;
+}
+#hashtagdiv {
+    grid-area: billed2;
+}
+#hashtagjpeg {
+    max-width: 100%;
+}
+
+.forside {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-right: 70px;
+    text-align: center;
+
+}
+footer {
+    background-color: #b3b3b3;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (min-width: 500px) {
+    #pagegrid {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "tekst0 tekst0"
+        "tekst1 tekst1"
+        "tekst2 tekst2"
+        "billed1 billed1"
+        "tekst3 tekst3"
+        "tekst4 tekst4"
+        "billed2 billed2"
+    }
+    
+    .forside {
+        margin-left: 275px;
+    }
+}

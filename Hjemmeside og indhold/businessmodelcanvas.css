@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 15px;
+}
+
+h2:nth-child(odd) {
+    color: #b1e493;
+}
+h2:nth-child(even) {
+    color: #93b8d9;
+}
+
+h3 {
+    text-align: center;
+}
+.forside {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-right: 70px;
+    text-align: center;
+
+}
+footer {
+    background-color: #b3b3b3;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+#pagegrid {
+    display: grid;
+    font-size: 15px;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "overskrift1"
+        "tekst1"
+        "tekst2"
+        "forretningstype1"
+        "tekst3"
+        "forretningstype2"
+        "tekst4"
+        "forretningstype3"
+        "tekst5"
+        "forretningstype4"
+        "tekst6"
+        "forretningstype5"
+        "tekst7"
+        "forretningstype6"
+        "tekst8"
+        "forretningstype7"
+        "tekst17"
+        "tekst9"
+        "tekst10"
+        "tekst11"
+        "billed1"
+        "tekst19"
+        "tekst18"
+        "overskrift2"
+        "tekst12"
+        "tekst13"
+        "tekst14"
+        "billed3"
+        "overskrift3"
+        "tekst15"
+        "tekst16"
+        "citat1"
+        ;
+        
+    
+    
+}
+
+/*--- OVERSKRIFTER ---*/
+
+#overskrift1 {
+    grid-area: overskrift1;
+    margin-top: 30px;
+}
+#overskrift2 {
+    grid-area: overskrift2;
+}
+#overskrift3 {
+    grid-area: overskrift3;
+}
+
+#forretningstype1 {
+    grid-area: forretningstype1;
+}
+
+#forretningstype2 {
+    grid-area: forretningstype2;
+}
+
+#forretningstype3 {
+    grid-area: forretningstype3;
+}
+
+#forretningstype4 {
+    grid-area: forretningstype4;
+}
+
+#forretningstype5 {
+    grid-area: forretningstype5;
+}
+
+#forretningstype6 {
+    grid-area: forretningstype6;
+}
+
+#forretningstype7 {
+    grid-area: forretningstype7;
+}
+
+/*--- TEKSTER ---*/
+
+#tekst1 {
+    grid-area: tekst1;
+}
+
+#tekst2 {
+    grid-area: tekst2;
+    text-align: center;
+}
+
+#tekst3 {
+    grid-area: tekst3;
+}
+
+#tekst4 {
+    grid-area: tekst4;
+}
+
+#tekst5 {
+    grid-area: tekst5;
+}
+
+#tekst6 {
+    grid-area: tekst6;
+}
+
+#tekst7 {
+    grid-area: tekst7;
+}
+
+#tekst8 {
+    grid-area: tekst8;
+}
+
+#tekst9 {
+    grid-area: tekst9;
+}
+#tekst10 {
+    grid-area: tekst10;
+}
+
+#tekst11 {
+    grid-area: tekst11;
+}
+
+#tekst12 {
+    grid-area: tekst12;
+}
+
+#tekst13 {
+    grid-area: tekst13;
+}
+
+#tekst14 {
+    grid-area: tekst14;
+}
+
+#tekst15 {
+    grid-area: tekst15;
+}
+
+#tekst16 {
+    grid-area: tekst16;
+}
+
+#tekst17 {
+    grid-area: tekst17;
+}
+#tekst18 {
+    grid-area: tekst18;
+    margin-left: 20px;
+}
+#tekst19 {
+    grid-area: tekst19;
+    margin-left: 10px;
+}
+
+div div p {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+   
+/*--- CITATER ---*/
+
+#citat1 {
+    grid-area: citat1;
+}
+/*--- BILLEDER ---*/
+
+#bmc1 {
+    max-width: 100%;
+    align-self: center;
+}
+#billed1 {
+    grid-area: billed1;
+}
+
+#bmc2 {
+    max-width: 100%;
+    align-self: center;
+}
+
+#bmc3 {
+    max-width: 100%;
+    align-self: center;
+}
+#billed3 {
+    grid-area: billed3;
+    
+}
+.forside {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-right: 70px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 500px) {
+    #pagegrid {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fafafa;
+    font-size: 15px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "overskrift1 overskrift1 overskrift1"
+        "tekst1 tekst1 tekst1"
+        ". tekst2 ."
+        "forretningstype1 forretningstype2 forretningstype3"
+        "tekst3 tekst4 tekst5"
+        "forretningstype4 forretningstype5 forretningstype6"
+        "tekst6 tekst7 tekst8"
+        ". forretningstype7 ."
+        "tekst17 tekst17 tekst17"
+        "tekst9 tekst9 tekst9"
+        "tekst10 tekst10 tekst10"
+        "tekst11 tekst11 tekst11"
+        "billed1 billed1 billed1"
+        "tekst18 tekst18 tekst18"
+        "tekst19 tekst19 tekst19"
+        "overskrift2 overskrift2 overskrift2"
+        "tekst12 tekst12 tekst12"
+        "tekst13 tekst13 tekst13"
+        "tekst14 tekst14 tekst14"
+        "billed3 billed3 billed3"
+        "overskrift3 overskrift3 overskrift3"
+        "tekst15 tekst15 tekst15"
+        "tekst16 tekst16 tekst16"
+        "citat1 citat1 citat1"
+        
+        
+    }
+    .forside {
+        margin-left: 300px;
+    }
+}

@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    display: none;
+}
+
+
+img {
+    border: solid black 1px;
+}
+
+#pagegrid {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "design design"
+        "billed1 billed2"
+        "billed3 billed4"
+        "billed5 billed5"
+        
+}
+
+#adobediv {
+    grid-area: billed1;
+}
+#adobejpeg {
+    max-width: 100%;
+}
+
+#fotodiv {
+    grid-area: billed2;
+}
+#fotojpeg {
+    max-width: 100%;
+}
+
+#farverdiv {
+    grid-area: billed3
+}
+#farverjpeg {
+    max-width: 100%;
+}
+
+#typodiv {
+    grid-area: billed4;
+}
+#typojpeg {
+    max-width: 100%;
+}
+
+#gestaltdiv {
+    grid-area: billed5;
+}
+#gestaltjpeg {
+    max-width: 100%;
+}
+#designjpeg {
+    max-width: 100%;
+}
+#designdiv {
+    grid-area: design;
+}
+
+@media screen and (min-width: 500px) {
+    #pagegrid {
+    background-color: #fafafa;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+        ". design design design design ."
+        ". billed1 billed1 billed2 billed2 ."
+        ". billed3 billed3 billed4 billed4 ."
+        ". . billed5 billed5 . ."
+        
+    }
+}
